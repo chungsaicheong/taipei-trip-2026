@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>台北慢活文青 4日3夜</title>
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.09);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --muted2: rgba(255,255,255,.55);
+      --line: rgba(255,255,255,.12);
+      --accent: rgba(255,255,255,.92);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", Arial;
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(255,255,255,.08), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(255,255,255,.06), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 18px 14px 56px; }
+    .header {
+      padding: 18px 16px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border-radius: var(--radius);
+    }
+    .kicker { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted2); }
+    .title { margin: 8px 0 6px; font-size: 26px; line-height: 1.2; }
+    .dates { color: var(--muted); font-size: 14px; }
+    .meta-grid {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .meta {
+      padding: 12px 12px;
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 14px;
+    }
+    .meta h4 { margin: 0 0 6px; font-size: 13px; color: var(--muted); font-weight: 600; }
+    .meta .main { font-size: 14px; }
+    .meta .sub { font-size: 12px; color: var(--muted2); margin-top: 4px; }
+    .tabs {
+      margin-top: 14px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .tab {
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: .15s ease;
+    }
+    .tab[aria-selected="true"] {
+      background: var(--card2);
+      border-color: rgba(255,255,255,.22);
+    }
+    .day {
+      margin-top: 14px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius);
+    }
+    .day h2 { margin: 0; font-size: 18px; }
+    .day .subtitle { margin-top: 6px; color: var(--muted); font-size: 13px; }
+    .timeline {
+      margin-top: 12px;
+      display: grid;
+      gap: 10px;
+    }
+    .item {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 14px;
+      padding: 12px 12px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 84px 34px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+    .time { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+    .icon {
+      width: 34px; height: 34px;
+      display: grid; place-items: center;
+      border-radius: 10px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .ititle { font-size: 15px; margin: 0; }
+    .note { margin-top: 4px; color: var(--muted); font-size: 13px; }
+    .detail { margin-top: 8px; color: var(--muted2); font-size: 13px; line-height: 1.5; }
+    .actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      padding: 8px 10px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .footer {
+      margin-top: 14px;
+      color: var(--muted2);
+      font-size: 12px;
+      text-align: center;
+    }
+    @media (max-width: 640px) {
+      .meta-grid { grid-template-columns: 1fr; }
+      .row { grid-template-columns: 72px 34px 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="header">
+      <div class="kicker">My Trip</div>
+      <div class="title" id="titleMain">台北慢活文青 4日3夜</div>
+      <div class="dates" id="dateRange">2026/01/23–01/26</div>
+
+      <div class="meta-grid">
+        <div class="meta">
+          <h4>去程</h4>
+          <div class="main" id="outMain"></div>
+          <div class="sub" id="outSub"></div>
+        </div>
+        <div class="meta">
+          <h4>回程</h4>
+          <div class="main" id="inMain"></div>
+          <div class="sub" id="inSub"></div>
+        </div>
+      </div>
+
+      <div class="tabs" id="tabs"></div>
+    </section>
+
+    <section class="day" id="day"></section>
+
+    <div class="footer" id="footerNote"></div>
+  </div>
+
+<script>
+const TRIP = {"meta": {"titleSmall": "My Trip", "titleMain": "台北慢活文青 4日3夜", "dateRange": "2026/01/23–01/26", "outbound": {"date": "2026/01/23", "flight": "UO110", "route": "香港 → 台北", "time": "（待補）"}, "inbound": {"date": "2026/01/26", "flight": "UO117", "route": "台北 → 香港", "time": "（待補）"}, "footerNote": "慢活版本：每天保留留白時間。點擊「地圖」可開啟 Google Maps。"}, "days": [{"label": "Day 1", "date": "1月23日（五）", "title": "抵達台北｜落地與放空", "subtitle": "入住後只做兩件事：咖啡＋散步", "items": [{"time": "（依航班）", "icon": "✈️", "title": "香港出發 → 台北", "note": "UO110（起降時間待補）"}, {"time": "（抵達後）", "icon": "🛬", "title": "抵達桃園機場", "note": "入境／取行李：預留 60–90 分鐘"}, {"time": "（抵達市區）", "icon": "🚈", "title": "前往市區／入住或寄存行李", "note": "機場捷運或的士"}, {"time": "15:00–16:30", "icon": "☕️", "title": "咖啡店坐一坐（不指定）", "note": "挑一間順眼的，坐滿 60–90 分鐘", "detail": "今天不用衝景點。讓身體慢下來就好。", "maps": "https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E5%8C%97%20%E5%92%96%E5%95%A1%E5%BA%97"}, {"time": "18:30–20:30", "icon": "🚶", "title": "西門町慢走", "note": "吃晚餐、看夜色；逛到想回就回", "detail": "西門町很好逛，但你不需要「逛完」。走到心滿意足就收工。", "maps": "https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E9%96%80%E7%94%BA"}]}, {"label": "Day 2", "date": "1月24日（六）", "title": "老城散步｜大稻埕 × 河岸 × 書店", "subtitle": "把時間花在「坐著」：茶館、閱讀、慢走", "items": [{"time": "09:00–10:30", "icon": "🥣", "title": "慢早餐＋整理心情", "note": "不趕出門"}, {"time": "11:30–15:30", "icon": "🏠", "title": "大稻埕散步＋茶館久坐", "note": "老屋街區、選一間茶館坐久一點", "detail": "建議只做兩件事：散步＋坐著。如果想加碼：河濱走一段就好。", "maps": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E7%A8%BB%E5%9F%95"}, {"time": "16:00–17:30", "icon": "📚", "title": "書店／閱讀時間", "note": "翻書、坐下、放空（不必買）", "detail": "挑一間你願意待著的書店。買不買都可以，坐著更重要。", "maps": "https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E5%8C%97%20%E7%8D%A8%E7%AB%8B%E6%9B%B8%E5%BA%97"}, {"time": "18:30–20:00", "icon": "🍲", "title": "家常晚餐", "note": "吃完就回去休息，保持旅行續航"}]}, {"label": "Day 3", "date": "1月25日（日）", "title": "童心日｜Pokémon Center × 信義留白", "subtitle": "重點只有一個：寶可夢中心（早去）", "items": [{"time": "10:30–12:00", "icon": "🧢", "title": "Pokémon Center Taipei", "note": "建議早到避人潮", "detail": "地點：新光三越台北信義新天地 A11（常見位置）。目標：看夠、拍照、理性消費。", "maps": "https://www.google.com/maps/search/?api=1&query=Pok%C3%A9mon%20Center%20Taipei"}, {"time": "12:30–14:00", "icon": "🥟", "title": "信義區午餐", "note": "百貨餐廳選擇多，挑順眼的即可"}, {"time": "14:30–17:30", "icon": "☕️", "title": "咖啡／展覽（隨緣）", "note": "找一間你願意坐 90 分鐘的地方", "detail": "慢活版核心：把下午留白。想看展就看，不想就喝咖啡。", "maps": "https://www.google.com/maps/search/?api=1&query=%E4%BF%A1%E7%BE%A9%E5%8D%80%20%E5%92%96%E5%95%A1%E5%BA%97"}, {"time": "18:30–20:30", "icon": "🍡", "title": "寧夏夜市（節制版）", "note": "只挑 3 樣吃，不打仗", "detail": "建議先繞一圈再決定。目標不是吃完，而是吃得剛剛好。", "maps": "https://www.google.com/maps/search/?api=1&query=%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82"}]}, {"label": "Day 4", "date": "1月26日（一）", "title": "回程日｜慢慢離開", "subtitle": "早餐、退房、去機場、回香港", "items": [{"time": "08:30–09:30", "icon": "☕️", "title": "早餐＋最後整理", "note": "把戰利品（尤其寶可夢）收好"}, {"time": "09:30–11:00", "icon": "🧳", "title": "退房／前往桃園機場", "note": "預留交通＋安檢時間"}, {"time": "（依航班）", "icon": "✈️", "title": "台北 → 香港", "note": "UO117（起降時間待補）"}]}]};
+
+function el(tag, attrs={}, ...children) {
+  const n = document.createElement(tag);
+  for (const [k,v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v;
+    else if (k.startsWith("on") && typeof v === "function") n.addEventListener(k.slice(2), v);
+    else if (v !== null && v !== undefined) n.setAttribute(k, v);
+  }
+  for (const c of children) {
+    if (c === null || c === undefined) continue;
+    n.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  }
+  return n;
+}
+
+function renderHeader() {
+  document.getElementById("outMain").textContent = `${TRIP.meta.outbound.flight}｜${TRIP.meta.outbound.route}`;
+  document.getElementById("outSub").textContent = `${TRIP.meta.outbound.date}  ${TRIP.meta.outbound.time}`;
+  document.getElementById("inMain").textContent  = `${TRIP.meta.inbound.flight}｜${TRIP.meta.inbound.route}`;
+  document.getElementById("inSub").textContent   = `${TRIP.meta.inbound.date}  ${TRIP.meta.inbound.time}`;
+  document.getElementById("footerNote").textContent = TRIP.meta.footerNote || "";
+}
+
+function renderTabs(selectedIdx) {
+  const tabs = document.getElementById("tabs");
+  tabs.innerHTML = "";
+  TRIP.days.forEach((d, i) => {
+    const b = el("button", {
+      class: "tab",
+      "aria-selected": i === selectedIdx ? "true" : "false",
+      onclick: () => setDay(i)
+    }, `${d.label}｜${d.date}`);
+    tabs.appendChild(b);
+  });
+}
+
+function renderDay(idx) {
+  const d = TRIP.days[idx];
+  const root = document.getElementById("day");
+  root.innerHTML = "";
+
+  root.appendChild(el("h2", {}, `${d.title}`));
+  root.appendChild(el("div", {class: "subtitle"}, d.subtitle || ""));
+
+  const list = el("div", {class: "timeline"});
+  (d.items || []).forEach(item => {
+    const title = el("div", {},
+      el("div", {class:"row"},
+        el("div", {class:"time"}, item.time || ""),
+        el("div", {class:"icon"}, item.icon || "•"),
+        el("div", {},
+          el("div", {class:"ititle"}, item.title || ""),
+          el("div", {class:"note"}, item.note || "")
+        )
+      )
+    );
+
+    const card = el("div", {class:"item"}, title);
+
+    if (item.detail) {
+      card.appendChild(el("div", {class:"detail"}, item.detail));
+    }
+
+    const actions = el("div", {class:"actions"});
+    if (item.maps) {
+      actions.appendChild(el("a", {class:"btn", href: item.maps, target:"_blank", rel:"noopener"}, "地圖"));
+    }
+    if (actions.childNodes.length) card.appendChild(actions);
+
+    list.appendChild(card);
+  });
+
+  root.appendChild(list);
+}
+
+let current = 0;
+function setDay(idx) {
+  current = idx;
+  renderTabs(current);
+  renderDay(current);
+}
+
+renderHeader();
+setDay(0);
+</script>
+</body>
+</html>
