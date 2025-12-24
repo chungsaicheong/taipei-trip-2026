@@ -4,18 +4,20 @@
     "titleMain": "台北慢活文青 4日3夜",
     "dateRange": "2026/01/23–01/26",
     "outbound": {
-      "date": "2026/01/23",
-      "flight": "UO110",
-      "route": "香港 → 台北",
-      "time": "（待補）"
+      "date": "2026-01-23",
+      "flight": "HK Express 110",
+      "route": "Hong Kong → Taipei",
+      "time": "11:25 AM → 1:10 PM (GMT+8)",
+      "duration": "1 hr 45 min"
     },
     "inbound": {
-      "date": "2026/01/26",
-      "flight": "UO117",
-      "route": "台北 → 香港",
-      "time": "（待補）"
+      "date": "2026-01-26",
+      "flight": "HK Express 117",
+      "route": "Taipei → Hong Kong",
+      "time": "9:15 PM → 11:25 PM (GMT+8)",
+      "duration": "2 hr 10 min"
     },
-    "footerNote": "慢活版本：每天保留留白時間。點擊「地圖」可開啟 Google Maps。"
+    "footerNote": "慢活版本：每天保留留白時間。按「重新整理行程資料」可即時重載內容。"
   },
   "days": [
     {
@@ -25,138 +27,106 @@
       "subtitle": "入住後只做兩件事：咖啡＋散步",
       "items": [
         {
-          "time": "（依航班）",
+          "time": "11:25–13:10",
           "icon": "✈️",
-          "title": "香港出發 → 台北",
-          "note": "UO110（起降時間待補）"
+          "title": "香港 → 台北（去程）",
+          "note": "HK Express 110｜飛行 1小時45分"
         },
         {
-          "time": "（抵達後）",
+          "time": "13:10–14:40",
           "icon": "🛬",
-          "title": "抵達桃園機場",
-          "note": "入境／取行李：預留 60–90 分鐘"
+          "title": "抵達桃園機場＋入境取行李",
+          "note": "預留 60–90 分鐘"
         },
         {
-          "time": "（抵達市區）",
+          "time": "14:40–15:40",
           "icon": "🚈",
-          "title": "前往市區／入住或寄存行李",
+          "title": "桃園 → 市區",
           "note": "機場捷運或的士"
         },
         {
-          "time": "15:00–16:30",
+          "time": "16:00–17:30",
           "icon": "☕️",
-          "title": "咖啡店坐一坐（不指定）",
-          "note": "挑一間順眼的，坐滿 60–90 分鐘",
-          "detail": "今天不用衝景點。讓身體慢下來就好。",
-          "maps": "https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E5%8C%97%20%E5%92%96%E5%95%A1%E5%BA%97"
+          "title": "咖啡店坐一坐",
+          "note": "不指定店名，放慢節奏"
         },
         {
           "time": "18:30–20:30",
           "icon": "🚶",
           "title": "西門町慢走",
-          "note": "吃晚餐、看夜色；逛到想回就回",
-          "detail": "西門町很好逛，但你不需要「逛完」。走到心滿意足就收工。",
-          "maps": "https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E9%96%80%E7%94%BA"
+          "note": "吃晚餐、看夜色"
+        },
+        {
+          "time": "20:45–21:45",
+          "icon": "🍣",
+          "title": "瞞著爹壽司（創始店）",
+          "note": "萬華區武昌街二段82巷2弄4號2樓"
         }
       ]
     },
     {
       "label": "Day 2",
       "date": "1月24日（六）",
-      "title": "老城散步｜大稻埕 × 河岸 × 書店",
-      "subtitle": "把時間花在「坐著」：茶館、閱讀、慢走",
+      "title": "文青日｜華山1914",
+      "subtitle": "看展、選物、坐著",
       "items": [
         {
-          "time": "09:00–10:30",
-          "icon": "🥣",
-          "title": "慢早餐＋整理心情",
-          "note": "不趕出門"
+          "time": "10:30–14:30",
+          "icon": "🖼️",
+          "title": "華山1914文創園區",
+          "note": "展覽／咖啡／選物"
         },
         {
-          "time": "11:30–15:30",
-          "icon": "🏠",
-          "title": "大稻埕散步＋茶館久坐",
-          "note": "老屋街區、選一間茶館坐久一點",
-          "detail": "建議只做兩件事：散步＋坐著。如果想加碼：河濱走一段就好。",
-          "maps": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E7%A8%BB%E5%9F%95"
-        },
-        {
-          "time": "16:00–17:30",
+          "time": "15:00–17:00",
           "icon": "📚",
           "title": "書店／閱讀時間",
-          "note": "翻書、坐下、放空（不必買）",
-          "detail": "挑一間你願意待著的書店。買不買都可以，坐著更重要。",
-          "maps": "https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E5%8C%97%20%E7%8D%A8%E7%AB%8B%E6%9B%B8%E5%BA%97"
-        },
-        {
-          "time": "18:30–20:00",
-          "icon": "🍲",
-          "title": "家常晚餐",
-          "note": "吃完就回去休息，保持旅行續航"
+          "note": "翻書、放空"
         }
       ]
     },
     {
       "label": "Day 3",
       "date": "1月25日（日）",
-      "title": "童心日｜Pokémon Center × 信義留白",
-      "subtitle": "重點只有一個：寶可夢中心（早去）",
+      "title": "童心＋放鬆＋購物",
+      "subtitle": "寶可夢・足湯・Outlet",
       "items": [
         {
           "time": "10:30–12:00",
           "icon": "🧢",
           "title": "Pokémon Center Taipei",
-          "note": "建議早到避人潮",
-          "detail": "地點：新光三越台北信義新天地 A11（常見位置）。目標：看夠、拍照、理性消費。",
-          "maps": "https://www.google.com/maps/search/?api=1&query=Pok%C3%A9mon%20Center%20Taipei"
+          "note": "新光三越信義 A11"
         },
         {
-          "time": "12:30–14:00",
-          "icon": "🥟",
-          "title": "信義區午餐",
-          "note": "百貨餐廳選擇多，挑順眼的即可"
+          "time": "13:30–14:30",
+          "icon": "♨️",
+          "title": "不老松足湯 台北信義行館",
+          "note": "放鬆泡腳"
         },
         {
-          "time": "14:30–17:30",
-          "icon": "☕️",
-          "title": "咖啡／展覽（隨緣）",
-          "note": "找一間你願意坐 90 分鐘的地方",
-          "detail": "慢活版核心：把下午留白。想看展就看，不想就喝咖啡。",
-          "maps": "https://www.google.com/maps/search/?api=1&query=%E4%BF%A1%E7%BE%A9%E5%8D%80%20%E5%92%96%E5%95%A1%E5%BA%97"
-        },
-        {
-          "time": "18:30–20:30",
-          "icon": "🍡",
-          "title": "寧夏夜市（節制版）",
-          "note": "只挑 3 樣吃，不打仗",
-          "detail": "建議先繞一圈再決定。目標不是吃完，而是吃得剛剛好。",
-          "maps": "https://www.google.com/maps/search/?api=1&query=%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82"
+          "time": "15:30–19:00",
+          "icon": "🛍️",
+          "title": "MITSUI OUTLET PARK 林口",
+          "note": "預留往返交通"
         }
       ]
     },
     {
       "label": "Day 4",
       "date": "1月26日（一）",
-      "title": "回程日｜慢慢離開",
-      "subtitle": "早餐、退房、去機場、回香港",
+      "title": "回程日",
+      "subtitle": "晚上返香港",
       "items": [
         {
-          "time": "08:30–09:30",
-          "icon": "☕️",
-          "title": "早餐＋最後整理",
-          "note": "把戰利品（尤其寶可夢）收好"
+          "time": "17:30–18:45",
+          "icon": "🚈",
+          "title": "市區 → 桃園機場",
+          "note": "建議 18:45 前到"
         },
         {
-          "time": "09:30–11:00",
-          "icon": "🧳",
-          "title": "退房／前往桃園機場",
-          "note": "預留交通＋安檢時間"
-        },
-        {
-          "time": "（依航班）",
+          "time": "21:15–23:25",
           "icon": "✈️",
-          "title": "台北 → 香港",
-          "note": "UO117（起降時間待補）"
+          "title": "台北 → 香港（回程）",
+          "note": "HK Express 117｜2小時10分"
         }
       ]
     }
