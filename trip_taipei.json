@@ -1,30 +1,40 @@
 {
   "meta": {
     "titleSmall": "My Trip",
-    "titleMain": "台北慢活文青 4日3夜",
+    "titleMain": "台北慢活文青 4日3夜｜最終版",
     "dateRange": "2026/01/23–01/26",
+    "hotel": {
+      "name": "路境行旅-府前館",
+      "address": "No.86, Sec. 1, Chongqing S. Rd., Zhongzheng, Taipei, 10045 台灣",
+      "checkin_date": "2026-01-23",
+      "checkout_date": "2026-01-26",
+      "checkin_time": "15:00",
+      "checkout_time": "11:00",
+      "booking_ref": "Expedia 行程編號：73334373984620",
+      "cancel_free_before": "2026-01-20 00:00（住宿當地時間）前可免費取消"
+    },
     "outbound": {
       "date": "2026-01-23",
       "flight": "HK Express 110",
-      "route": "Hong Kong → Taipei",
+      "route": "Hong Kong → Taipei (TPE)",
       "time": "11:25 AM → 1:10 PM (GMT+8)",
       "duration": "1 hr 45 min"
     },
     "inbound": {
       "date": "2026-01-26",
       "flight": "HK Express 117",
-      "route": "Taipei → Hong Kong",
+      "route": "Taipei (TPE) → Hong Kong",
       "time": "9:15 PM → 11:25 PM (GMT+8)",
       "duration": "2 hr 10 min"
     },
-    "footerNote": "慢活版本：每天保留留白時間。按「重新整理行程資料」可即時重載內容。"
+    "footerNote": "慢活版本（可撤退設計）：每一天都可以提早收工。按「重新整理行程資料」會即時重載 trip_taipei.json（如你更新咗資料）。"
   },
   "days": [
     {
       "label": "Day 1",
       "date": "1月23日（五）",
-      "title": "抵達台北｜落地與放空",
-      "subtitle": "入住後只做兩件事：咖啡＋散步",
+      "title": "落地適應｜Outlet × 西門町 × 紅樓夜生活",
+      "subtitle": "順路消化移動成本；第一晚感受台北（識人唔用力）",
       "items": [
         {
           "time": "11:25–13:10",
@@ -35,98 +45,250 @@
         {
           "time": "13:10–14:40",
           "icon": "🛬",
-          "title": "抵達桃園機場＋入境取行李",
-          "note": "預留 60–90 分鐘"
+          "title": "桃園機場入境＋取行李",
+          "note": "SIM／提款如需要；慢慢嚟"
         },
         {
-          "time": "14:40–15:40",
-          "icon": "🚈",
-          "title": "桃園 → 市區",
-          "note": "機場捷運或的士"
+          "time": "14:50–16:30",
+          "icon": "🛍️",
+          "title": "華泰名品城（GLORIA OUTLETS）",
+          "note": "交通：機場步行 5–10 分鐘｜策略：90 分鐘上限，只行 2–3 間",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E8%8F%AF%E6%B3%B0%E5%90%8D%E5%93%81%E5%9F%8E%20GLORIA%20OUTLETS"
         },
         {
-          "time": "16:00–17:30",
-          "icon": "☕️",
-          "title": "咖啡店坐一坐",
-          "note": "不指定店名，放慢節奏"
+          "time": "16:45–18:00",
+          "icon": "🚆",
+          "title": "機捷入城 → 酒店",
+          "note": "首選：桃園機場捷運 → A1 台北車站（約35–40分）→ 步行10–12分或的士5分到酒店",
+          "detail": "酒店：路境行旅-府前館（可先寄存行李；15:00 起可正式入住）。"
         },
         {
-          "time": "18:30–20:30",
+          "time": "18:00–19:00",
+          "icon": "🏨",
+          "title": "入住／沖涼／休息",
+          "note": "停一停，夜晚精神會差好遠"
+        },
+        {
+          "time": "19:30–20:30",
           "icon": "🚶",
-          "title": "西門町慢走",
-          "note": "吃晚餐、看夜色"
+          "title": "西門町慢行",
+          "note": "交通：酒店步行 8–10 分鐘｜行到舒服就折返",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E9%96%80%E7%94%BA"
         },
         {
-          "time": "20:45–21:45",
-          "icon": "🍣",
-          "title": "瞞著爹壽司（創始店）",
-          "note": "萬華區武昌街二段82巷2弄4號2樓"
+          "time": "20:30–21:15",
+          "icon": "🍽️",
+          "title": "晚餐（簡單坐得）",
+          "note": "建議：金峰魯肉飯 或 酒店附近；避免太油膩（為夜晚留力）",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E9%87%91%E5%B3%B0%E9%AD%AF%E8%82%89%E9%A3%AF"
+        },
+        {
+          "time": "21:30–22:30",
+          "icon": "🍸",
+          "title": "紅樓夜｜Café Dalida（暖身易傾偈）",
+          "note": "西門紅樓附近｜戶外座位多；開場白：第一次嚟紅樓，有冇推介？",
+          "maps": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Dalida%20Taipei"
+        },
+        {
+          "time": "22:30–23:30",
+          "icon": "🍺",
+          "title": "紅樓夜｜Commander D（聊天向）",
+          "note": "想傾偈就去；覺得夠就直接返酒店（零 KPI）",
+          "maps": "https://www.google.com/maps/search/?api=1&query=Commander%20D%20Taipei"
+        },
+        {
+          "time": "23:30–00:00",
+          "icon": "🛌",
+          "title": "步行返酒店／收工",
+          "note": "全程步行可返；任何時候想走就走"
         }
       ]
     },
     {
       "label": "Day 2",
       "date": "1月24日（六）",
-      "title": "文青日｜華山1914",
-      "subtitle": "看展、選物、坐著",
+      "title": "文青吸收日｜華山1914 × 書店 × 瞞著爹壽司",
+      "subtitle": "文化＋坐低＋一餐好食（精神最好的一天）",
       "items": [
         {
-          "time": "10:30–14:30",
+          "time": "09:30–10:30",
+          "icon": "🥣",
+          "title": "早餐＋慢慢出門",
+          "note": "目標：唔趕"
+        },
+        {
+          "time": "10:30–11:00",
+          "icon": "🚇",
+          "title": "酒店 → 華山1914（交通）",
+          "note": "捷運：西門→板南線→善導寺站（2號出口步行約5分）；或的士10–15分"
+        },
+        {
+          "time": "11:00–14:30",
           "icon": "🖼️",
           "title": "華山1914文創園區",
-          "note": "展覽／咖啡／選物"
+          "note": "做法：先繞一圈，再揀 1 個展＋1 間咖啡；留時間坐",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E8%8F%AF%E5%B1%B11914%E6%96%87%E5%89%B5%E5%9C%92%E5%8D%80"
+        },
+        {
+          "time": "14:30–15:00",
+          "icon": "🧃",
+          "title": "回到市中心／小休",
+          "note": "可以返酒店附近坐 15–30 分鐘（補給站）"
         },
         {
           "time": "15:00–17:00",
           "icon": "📚",
           "title": "書店／閱讀時間",
-          "note": "翻書、放空"
+          "note": "台北車站／西門一帶；今日成功指標：坐得耐",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E8%AA%A0%E5%93%81%20%E8%A5%BF%E9%96%80%20%E5%8F%B0%E5%8C%97"
+        },
+        {
+          "time": "17:45–18:20",
+          "icon": "🚕",
+          "title": "酒店 → 瞞著爹（交通）",
+          "note": "的士 8–10 分鐘；或捷運＋步行（近西門／萬華）"
+        },
+        {
+          "time": "18:30–20:00",
+          "icon": "🍣",
+          "title": "瞞著爹壽司（創始店）",
+          "note": "台北市萬華區武昌街二段82巷2弄4號2樓（建議早到/預約）",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E7%9E%9E%E8%91%97%E7%88%B9%E5%A3%BD%E5%8F%B8%20%E5%89%B5%E5%A7%8B%E5%BA%97"
+        },
+        {
+          "time": "20:30",
+          "icon": "🏨",
+          "title": "返酒店／早收工",
+          "note": "為 Day 3 留力"
         }
       ]
     },
     {
       "label": "Day 3",
       "date": "1月25日（日）",
-      "title": "童心＋放鬆＋購物",
-      "subtitle": "寶可夢・足湯・Outlet",
+      "title": "慢活核心日｜Pokémon × 鼎泰豐 × 3小時按摩 × 大誠品",
+      "subtitle": "食得好 → 身體回復 → 空間感大書店（今日唔用腳拼命）",
       "items": [
         {
-          "time": "10:30–12:00",
+          "time": "09:45–10:30",
+          "icon": "🚇",
+          "title": "酒店 → 信義區（交通）",
+          "note": "捷運：台北車站→板南線→市政府站；步行約10分到A11"
+        },
+        {
+          "time": "10:30–11:30",
           "icon": "🧢",
-          "title": "Pokémon Center Taipei",
-          "note": "新光三越信義 A11"
+          "title": "Pokémon Center Taipei（A11）",
+          "note": "策略：1 小時上限；拍照＋買 1–2 樣；可問台北限定商品",
+          "maps": "https://www.google.com/maps/search/?api=1&query=Pok%C3%A9mon%20Center%20Taipei"
         },
         {
-          "time": "13:30–14:30",
+          "time": "11:30–12:45",
+          "icon": "🥟",
+          "title": "鼎泰豐（新光三越 A4）午餐",
+          "note": "唔使book（一般book唔到）；11:00–11:30 到更穩；等位≤45分就食，爆就轉A8",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E9%BC%8E%E6%B3%B0%E8%B1%90%20%E6%96%B0%E5%85%89%E4%B8%89%E8%B6%8AA4"
+        },
+        {
+          "time": "12:45–13:20",
+          "icon": "🧃",
+          "title": "信義區小休／補水",
+          "note": "為按摩前留白（唔好硬塞行程）"
+        },
+        {
+          "time": "13:20–13:30",
+          "icon": "🚕",
+          "title": "A4/A11 → 不老松（交通）",
+          "note": "建議的士 5–10 分鐘（最省腳）"
+        },
+        {
+          "time": "13:30–16:30",
           "icon": "♨️",
-          "title": "不老松足湯 台北信義行館",
-          "note": "放鬆泡腳"
+          "title": "不老松足湯・台北信義行館（3 小時按摩）",
+          "note": "足湯＋按摩；中段休息；唔好滑手機（回復效果最大化）",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E4%B8%8D%E8%80%81%E6%9D%BE%E8%B6%B3%E6%B9%AF%20%E5%8F%B0%E5%8C%97%E4%BF%A1%E7%BE%A9%E8%A1%8C%E9%A4%A8"
         },
         {
-          "time": "15:30–19:00",
-          "icon": "🛍️",
-          "title": "MITSUI OUTLET PARK 林口",
-          "note": "預留往返交通"
+          "time": "16:30–17:30",
+          "icon": "☕️",
+          "title": "按摩後咖啡／短休",
+          "note": "先坐 20–40 分鐘再去松菸（身體會更舒服）"
+        },
+        {
+          "time": "17:30–19:30",
+          "icon": "📖",
+          "title": "誠品生活松菸（大誠品）",
+          "note": "按摩後唔建議步行太耐；的士 5–8 分鐘；行到攰就坐",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E8%AA%A0%E5%93%81%E7%94%9F%E6%B4%BB%E6%9D%BE%E8%8F%B8"
+        },
+        {
+          "time": "19:30–20:30",
+          "icon": "🚇",
+          "title": "松菸 → 酒店（交通）",
+          "note": "捷運：國父紀念館站→板南線→西門/台北車站；約30分"
+        },
+        {
+          "time": "20:30",
+          "icon": "🍜",
+          "title": "簡單晚餐／返酒店早瞓",
+          "note": "今日核心已完成；早瞓＝超值"
         }
       ]
     },
     {
       "label": "Day 4",
       "date": "1月26日（一）",
-      "title": "回程日",
-      "subtitle": "晚上返香港",
+      "title": "收尾留白｜退房寄存 × 公園 Pokémon GO × 夜機回港",
+      "subtitle": "不製造風險；用公園放空收尾（30–60分鐘就夠）",
       "items": [
         {
+          "time": "09:30–10:30",
+          "icon": "☕️",
+          "title": "早餐＋收拾行李",
+          "note": "慢慢執，唔急"
+        },
+        {
+          "time": "11:00",
+          "icon": "🏨",
+          "title": "退房（寄存行李於酒店）",
+          "note": "之後活動無包袱；記得帶走護照/充電器等"
+        },
+        {
+          "time": "11:20–12:00",
+          "icon": "🚇",
+          "title": "酒店 → 大安森林公園（交通）",
+          "note": "捷運：西門/台北車站→板南線→忠孝新生→轉文湖線→大安森林公園站；約25–30分"
+        },
+        {
+          "time": "12:00–13:00",
+          "icon": "🌳",
+          "title": "大安森林公園 × Pokémon GO（正式行程）",
+          "note": "玩法：30–60 分鐘；平路＋多椅；補給站密，唔使追怪；行到舒服就走",
+          "maps": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%AE%89%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92"
+        },
+        {
+          "time": "13:15–15:30",
+          "icon": "🥪",
+          "title": "午餐／咖啡（公園附近或返市中心）",
+          "note": "今日係留白日：坐低先係重點"
+        },
+        {
+          "time": "15:30–16:30",
+          "icon": "🧳",
+          "title": "返酒店附近／取行李／最後補買手信",
+          "note": "西門／台北車站一帶最方便"
+        },
+        {
           "time": "17:30–18:45",
-          "icon": "🚈",
-          "title": "市區 → 桃園機場",
-          "note": "建議 18:45 前到"
+          "icon": "🚆",
+          "title": "台北車站 A1 → 桃園機場（機捷）",
+          "note": "約35–40分；夜機唔好搏的士；建議 18:45 前到"
         },
         {
           "time": "21:15–23:25",
           "icon": "✈️",
           "title": "台北 → 香港（回程）",
-          "note": "HK Express 117｜2小時10分"
+          "note": "HK Express 117｜飛行 2小時10分"
         }
       ]
     }
